@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "pattern": [
     " B ",
     " P ",
@@ -11,7 +11,7 @@
     "G": { "item": "minecraft:gunpowder" }
   },
   "result": {
-    "id": "brassrocket:brass_rocket",
+    "id": "anticreate:brass_rocket",
     "count": 3
   }
 }
