@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " P ",
+    " G "
+  ],
+  "key": {
+    "B": { "item": "create:brass_ingot" },
+    "P": { "item": "minecraft:paper" },
+    "G": { "item": "minecraft:gunpowder" }
+  },
+  "result": {
+    "id": "brassrocket:brass_rocket",
+    "count": 3
+  }
+}
