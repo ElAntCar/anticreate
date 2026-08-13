@@ -11,10 +11,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
-@Mod(BrassRocketMod.MODID)
-public class BrassRocketMod {
+@Mod(AntiCreateMod.MODID)
+public class AntiCreateMod {
 
-    public static final String MODID = "brassrocket";
+    public static final String MODID = "anticreate";
 
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(MODID);
@@ -22,18 +22,19 @@ public class BrassRocketMod {
     public static final DeferredItem<BrassRocketItem> BRASS_ROCKET =
             ITEMS.register("brass_rocket", () -> new BrassRocketItem(new Item.Properties()
                     .stacksTo(64)
-                    // Power 3 fijo, sin estrellas de color (lista de explosiones vacía)
+                    // Rocket Power SET 3
                     .component(DataComponents.FIREWORKS, new Fireworks(3, NonNullList.create()))));
 
-    public BrassRocketMod(IEventBus modEventBus) {
+    public AntiCreateMod(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
         modEventBus.addListener(this::addCreative);
     }
 
-    // Agrega el item a la pestaña de "Combate" del inventario creativo (donde vive el firework vanilla)
+    // Add Items to Combat Menu
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(BRASS_ROCKET);
+            // event.accept(EASTER_EGG);
         }
     }
 }
