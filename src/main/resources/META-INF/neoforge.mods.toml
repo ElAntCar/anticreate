@@ -4,27 +4,27 @@ license = "MIT"
 issueTrackerURL = ""
 
 [[mods]]
-modId = "brassrocket"
-version = "0.0.1b"
-displayName = "Brass Rocket"
+modId = "anticreate"
+version = "0.0.2b"
+displayName = "AntiCreate"
 authors = "ElAntCar"
-description = '''Brass Rocket (Insta Power 3)'''
+description = '''Adds a Brass Rocket (Insta Power 3)'''
 
-[[dependencies.brassrocket]]
+[[dependencies.anticreate]]
     modId = "neoforge"
     type = "required"
     versionRange = "[21.1,)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies.brassrocket]]
+[[dependencies.anticreate]]
     modId = "minecraft"
     type = "required"
     versionRange = "[1.21.1,1.21.2)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies.brassrocket]]
+[[dependencies.anticreate]]
     modId = "create"
     type = "required"
     versionRange = "[6.0,)"
