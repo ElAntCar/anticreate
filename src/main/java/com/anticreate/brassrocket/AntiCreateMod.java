@@ -23,7 +23,7 @@ public class AntiCreateMod {
             ITEMS.register("brass_rocket", () -> new BrassRocketItem(new Item.Properties()
                     .stacksTo(64)
                     // Rocket Power SET 3
-                    .component(DataComponents.FIREWORKS, new Fireworks(3, NonNullList.create()))));
+                    .component(DataComponents.FIREWORKS, new Fireworks(4, NonNullList.create()))));
 
     public AntiCreateMod(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
