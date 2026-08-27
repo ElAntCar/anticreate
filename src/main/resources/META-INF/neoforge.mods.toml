@@ -5,10 +5,10 @@ issueTrackerURL = ""
 
 [[mods]]
 modId = "anticreate"
-version = "0.0.2b"
+version = "0.0.3b"
 displayName = "AntiCreate"
 authors = "ElAntCar"
-description = '''Adds a Brass Rocket (Insta Power 3)'''
+description = '''Adds a Brass Rocket (Insta Power 4)'''
 
 [[dependencies.anticreate]]
     modId = "neoforge"
